@@ -25,6 +25,7 @@
 body{
     position: absolute;
     width: 100%;
+    height: 100%;
     background: #121212;
 }
 
@@ -72,6 +73,7 @@ input::-webkit-inner-spin-button {
     font-size: 1.3vh;
     font-family: "Quicksand";
     top: 0%;
+    margin-left: 15px;
     user-select: none;
 }
 
@@ -151,4 +153,18 @@ input::-webkit-inner-spin-button {
 
 .over{
     color: rgb(255, 25, 25) !important;
+}
+
+.option{
+    bottom: 0%;
+    right: 0%;
+    margin-right: 15px;
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+.option label{
+    color: white;
+    position: relative;
+    font-family: "Quicksand";
 }

@@ -53,6 +53,9 @@ document.getElementById("num").addEventListener("keyup", (event) => {
         localStorage.setItem("rgb", JSON.stringify(rgb_json))
         console.log(document.getElementById("num").value)
         // document.getElementById(`g${guesses}`).style.color = `rgb(255, ${g(num_val)}, 0)`
+        if(document.getElementById("clear").checked){
+            document.getElementById("num").value = "";
+        }
         guess(num_val)
     }
 })

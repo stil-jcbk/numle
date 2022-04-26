@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numle</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body onload="loader()">
@@ -20,6 +22,10 @@
     </dialog>
     <h1 class="title">NUMLE</h1>
     <p class="warn">free mode only<br>w.i.p.</p>
+    <div class="option">
+        <input id="clear" type="checkbox">
+        <label>remove text on guess</label>
+    </div>
     <p class="desc">Guess a number between<br><b>1</b> and <b>100000</b></p>
     <input id="num"
         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
