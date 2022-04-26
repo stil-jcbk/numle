@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Secular+One");
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 32, 32);
+    border: 0 #252525;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #252525;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    background: #121212;
+}
+
+.title{
+    color: white;
+    font-size: 8vh;
+    font-family: "Secular One";
+    text-align: center;
+    user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.number_input{
+    -moz-appearance: textfield;
+    color: white;
+    font-size: 5vh;
+    display: block;
+    margin-top: 7%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    background: #121212;
+    font-family: "Plus Jakarta Sans";
+    width: 100%;
+}
+
+.desc{
+    font-size: 1.7vh;
+    color: white;
+    text-align: center;
+    font-family: "Quicksand";
+}
+
+.warn{
+    position: absolute;
+    color: white;
+    font-size: 1.3vh;
+    font-family: "Quicksand";
+    top: 0%;
+    user-select: none;
+}
+
+#winDialog{
+    position: absolute;
+    margin: auto;
+    border: none;
+    height: 30rem;
+    width: 20rem;
+    background: rgba(12, 12, 12, 0.582);
+}
+
+.win_title{
+    color: white;
+    font-family: "Quicksand";
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    top: 20px;
+}
+
+.win_desc{
+    color: white;
+    font-family: "Quicksand";
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    font-size: 2rem;
+    top: 20px;
+}
+.win_solution{
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    top: 20px;
+}
+
+#history{
+    font-weight: bold;
+    /* background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.4;
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 60px;
+}
+
+.arrow{
+    fill: #FFFFFF !important;
+}
+
+.correct{
+    color: rgb(36, 255, 72);
+}
+
+.number{
+    color: #FFFFFF;
+}
+
+.too_high{
+    color: rgb(255, 25, 25);
+}
+
+#guesses{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.4vh;
+    margin-top: 10px;
+    word-spacing: 7px;
+}
+
+.over{
+    color: rgb(255, 25, 25) !important;
+}

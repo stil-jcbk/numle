@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="static/css/main.css" rel="stylesheet">
+    <script defer src="static/js/index.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numle</title>
+</head>
+
+<body onload="loader()">
+    <dialog id="winDialog">
+        <form method="dialog">
+            <p class="win_title">You Win!</p>
+            <p class="win_desc">The number was:</p>
+            <p id="win_solution" class="win_solution"></p>
+        </form>
+    </dialog>
+    <h1 class="title">NUMLE</h1>
+    <p class="warn">free mode only<br>w.i.p.</p>
+    <p class="desc">Guess a number between<br><b>1</b> and <b>100000</b></p>
+    <input id="num"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        maxlength="6" autofocus type="number" class="number_input" placeholder=".......">
+    <p id="guesses"></p>
+    <div id="history"></div>
+</body>
+
+</html>
